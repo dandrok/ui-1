@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-main: rgb(22, 26, 65);
+  --color-white: #fff;
+  --color-bg: rgb(228, 230, 246);
+}
+
+html {
+  background: var(--color-bg);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cointainer {
+  background: var(--color-white);
+  padding: 1rem;
+  width: 340px;
+  height: 360px;
+}
+
+.btn--exit {
+  display: flex;
+  justify-content: flex-end;
+}
