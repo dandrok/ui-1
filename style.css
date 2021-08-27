@@ -6,28 +6,153 @@
 
 :root {
   --color-main: rgb(22, 26, 65);
+  --color-main-medium: rgba(22, 26, 65, 0.555);
+
   --color-white: #fff;
   --color-bg: rgb(228, 230, 246);
+  --color-bg-medium: rgba(228, 230, 246, 0.89);
+
+  --margins: 1rem;
+}
+
+h1 {
+  font-size: 1rem;
+  color: var(--color-main);
 }
 
 html {
   background: var(--color-bg);
+  font-family: source-serif-4, serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .cointainer {
   background: var(--color-white);
-  padding: 1rem;
+  padding: 1rem 2.5rem;
   width: 340px;
   height: 360px;
+  border-radius: 15px;
 }
 
 .btn--exit {
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  left: 20px;
+}
+
+/* .rate__cointainer {
+  margin-bottom: 2.5rem;
+} */
+
+.h1__container {
+  margin-bottom: 1.5rem;
+}
+
+.rate__cointainer_divs {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.rate__cointainer_divs > div {
+  padding: 0.55rem 1.25rem;
+  border-radius: 5px;
+  border: solid var(--color-bg-medium) 1px;
+  font-weight: 600;
+  color: var(--color-main);
+  transition: all 0.4s;
+}
+.rate__cointainer_divs > div:hover {
+  background: var(--color-main);
+  color: var(--color-white);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.underRate__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.underRate__container > p {
+  font-size: 0.65rem;
+  width: 40px;
+  font-weight: 600;
+}
+
+.checkbox__container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 1.5rem;
+}
+.checkbox__container > label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  user-select: none;
+}
+.checkbox__container > input {
+  width: 18px;
+  height: 18px;
+}
+
+.underline {
+  border-bottom: solid var(--color-bg-medium) 1px;
+  margin-bottom: 1.5rem;
+}
+
+/* button */
+
+.btn__circle {
+  border: solid var(--color-bg-medium) 1px;
+  background-color: var(--color-white);
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__circle > svg {
+  width: 12px;
+  height: 12px;
+  fill: var(--color-main);
+}
+
+.btn__next {
+  border: solid var(--color-bg-medium) 1px;
+  background-color: var(--color-white);
+  height: 36px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  padding: 1.5rem 0;
+}
+
+.btn__next > svg {
+  height: 12px;
+  fill: var(--color-main);
+}
+
+button {
+  transition: all 0.5s;
+}
+
+button:hover {
+  background: var(--color-bg-medium);
 }
